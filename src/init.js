@@ -32,7 +32,7 @@ $(document).ready(function() {
     var maxLeft =  1200 - (top - 400) * 2;
     var left = getRandomArbitrary(minLeft, maxLeft);
     // make a dancer with a random position
-    var dancer =  new dancerMakerFunction(top, left, Math.random() * 1000);
+    var dancer =  new dancerMakerFunction(top, left, getRandomArbitrary(300, 500));
     $('body').append(dancer.$node);
   });
 });

@@ -4,7 +4,7 @@ var makeBellyDancer = function(top, left, timeBetweenSteps) {
   this.relativeSize = Math.floor(0.3 * top - 110);
   this.$node.prepend('<img class="nermine" src="img/nermine.jpg" style="height: '
                         + this.relativeSize +'%; width: ' + this.relativeSize + '%;" />');
-  $('audio')[0].play();
+  // $('audio')[0].play();
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 
@@ -18,5 +18,10 @@ makeBellyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   // this.$node.toggle();
+  if(this.$node.find('.nermine').hasClass('mirror')) {
+    this.$node.find('.nermine').removeClass('mirror');
+  } else {
+    this.$node.find('.nermine').addClass('mirror');
+  }
 };
 

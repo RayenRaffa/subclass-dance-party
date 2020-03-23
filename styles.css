@@ -29,3 +29,7 @@ body, a:link, a:visited, a:active{
   height: 40%;
   width: 40%;
 }
+.mirror {
+ -webkit-transform: scale(-1, 1);
+ transform: scale(-1, 1);
+}
