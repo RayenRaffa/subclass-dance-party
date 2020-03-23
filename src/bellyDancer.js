@@ -4,6 +4,7 @@ var makeBellyDancer = function(top, left, timeBetweenSteps) {
   this.relativeSize = Math.floor(0.3 * top - 110);
   this.$node.prepend('<img class="nermine" src="img/nermine.jpg" style="height: '
                         + this.relativeSize +'%; width: ' + this.relativeSize + '%;" />');
+  $('audio')[0].play();
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 

@@ -3,7 +3,10 @@ $(document).ready(function() {
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
-
+  // Playing music on page load 
+  $("<audio></audio>").attr({
+    'src':'music/la_fiesta.mp3'
+  }).appendTo("body");
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -25,7 +28,7 @@ $(document).ready(function() {
 
     
     var top = getRandomArbitrary(400,500);
-    var minLeft = 330 + (top - 400) * 3;
+    var minLeft = 330 + (top - 400) * 4;
     var maxLeft =  1200 - (top - 400) * 2;
     var left = getRandomArbitrary(minLeft, maxLeft);
     // make a dancer with a random position
