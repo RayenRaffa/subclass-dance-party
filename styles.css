@@ -20,8 +20,12 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+.dancer {
+  /*border:10px solid;
+  border-radius: 50%;*/ 
   position:absolute;
+}
+.nermine {
+  height: 40%;
+  width: 40%;
 }
