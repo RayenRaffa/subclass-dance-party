@@ -1,7 +1,9 @@
 var makeBellyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this,top, left, timeBetweenSteps);
-  this.$node.prepend('<img class="nermine" src="img/nermine.jpg" />');
-  
+  // adding dynamic size to give the illusion of depth
+  this.relativeSize = Math.floor(0.35 * top - 135);
+  this.$node.prepend('<img class="nermine" src="img/nermine.jpg" style="height: '
+                        + this.relativeSize +'%; width: ' + this.relativeSize + '%;" />');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 
