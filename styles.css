@@ -33,3 +33,10 @@ body, a:link, a:visited, a:active{
  -webkit-transform: scale(-1, 1);
  transform: scale(-1, 1);
 }
+.bouden {
+  margin-left: 350px;
+  margin-top: 200px;
+  height: 40%;
+  width: 40%;
+  position: relative;
+}

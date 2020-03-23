@@ -33,7 +33,11 @@ $(document).ready(function() {
     var left = getRandomArbitrary(minLeft, maxLeft);
     // make a dancer with a random position
     var dancer =  new dancerMakerFunction(top, left, getRandomArbitrary(300, 500));
-    $('body').append(dancer.$node);
+    if(dancerMakerFunctionName === 'makeBoudenDancer'){
+      $('body').append(dancer.$node);
+    } else {
+      $('body').prepend(dancer.$node);
+    }
   });
 });
 
