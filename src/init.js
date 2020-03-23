@@ -7,6 +7,9 @@ $(document).ready(function() {
   $("<audio></audio>").attr({
     'src':'music/la_fiesta.mp3'
   }).appendTo("body");
+  $("<audio></audio>").attr({
+    'src':'music/bouden.mp3'
+  }).appendTo("body");
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
