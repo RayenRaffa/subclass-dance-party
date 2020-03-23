@@ -26,8 +26,8 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .nermine {
-  height: 40%;
-  width: 40%;
+  height: 200%;
+  width: 200%;
 }
 .mirror {
  -webkit-transform: scale(-1, 1);
@@ -39,7 +39,7 @@ body, a:link, a:visited, a:active{
   height: 40%;
   width: 40%;
   position: relative;
-  animation: rotation 5s infinite linear;
+  animation: rotation 7s infinite linear;
 }
 @keyframes rotation {
   from {
@@ -60,7 +60,7 @@ body, a:link, a:visited, a:active{
   height: 100px;
   width: 400px;
   font-size: 36px;
-  font-family: Roboto;
+  font-family: Verdana;
   color: #dc143c;
   text-align: center;
   padding-top: 20px;

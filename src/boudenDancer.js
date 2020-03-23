@@ -7,7 +7,7 @@ var makeBoudenDancer = function(top, left, timeBetweenSteps) {
     makeDancer.call(this, 400, 450, timeBetweenSteps);
     // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
     // so we must keep a copy of the old version of this function
-    this.$node.append('<img class="bouden" src="img/bouden.jpeg" style="" />');
+    this.$node.append('<img class="bouden" src="img/bouden.png" style="" />');
     $('audio')[1].play();
     $('body').find('#bellyButton').toggle(250);
   }
