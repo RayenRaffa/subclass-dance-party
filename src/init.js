@@ -23,13 +23,13 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
+    
+    var top = getRandomArbitrary(400,500);
+    var minLeft = 330 + (top - 400) * 3;
+    var maxLeft =  1200 - (top - 400) * 2;
+    var left = getRandomArbitrary(minLeft, maxLeft);
     // make a dancer with a random position
-
-    var dancer =  new dancerMakerFunction(
-      getRandomArbitrary(400,500),
-      getRandomArbitrary(330,1200),
-      Math.random() * 1000
-      );
+    var dancer =  new dancerMakerFunction(top, left, Math.random() * 1000);
     $('body').append(dancer.$node);
   });
 });
